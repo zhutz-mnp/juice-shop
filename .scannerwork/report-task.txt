@@ -1,0 +1,6 @@
+projectKey=Juice-Shop-Test
+serverUrl=https://www.mnpsolutions.ca/sonarqube
+serverVersion=9.0.0.45539
+dashboardUrl=https://www.mnpsolutions.ca/sonarqube/dashboard?id=Juice-Shop-Test
+ceTaskId=AYHVJWSbqbyYCSUKQ-KZ
+ceTaskUrl=https://www.mnpsolutions.ca/sonarqube/api/ce/task?id=AYHVJWSbqbyYCSUKQ-KZ
