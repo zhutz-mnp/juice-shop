@@ -90,7 +90,7 @@ jobs:
         run: npm install
       - name: "Execute unit tests"
         if: github.repository == 'juice-shop/juice-shop' || github.repository != 'juice-shop/juice-shop' && matrix.os == 'ubuntu-latest' && matrix.node-version == '16'
-        uses: nick-invision/retry@45ba062d357edb3b29c4a94b456b188716f61020 #v2: 2.4.1 available
+        uses: nick-invision/retry@e88a9994b039653512d697de1bce46b00bfe11b5 #v2: 2.4.1 available
         with:
           timeout_minutes: 15
           max_attempts: 3
@@ -130,7 +130,7 @@ jobs:
         run: npm install
       - name: "Execute integration tests"
         if: github.repository == 'juice-shop/juice-shop' || github.repository != 'juice-shop/juice-shop' && matrix.os == 'ubuntu-latest' && matrix.node-version == '16'
-        uses: nick-invision/retry@45ba062d357edb3b29c4a94b456b188716f61020 #v2: 2.4.1 available
+        uses: nick-invision/retry@e88a9994b039653512d697de1bce46b00bfe11b5 #v2: 2.4.1 available
         with:
           timeout_minutes: 5
           max_attempts: 3
@@ -194,7 +194,7 @@ jobs:
         if: github.repository == 'juice-shop/juice-shop' || github.repository != 'juice-shop/juice-shop' && matrix.os == 'ubuntu-latest' && matrix.node-version == '16'
         run: npm install
       - name: "Execute server tests for each custom configuration"
-        uses: nick-invision/retry@45ba062d357edb3b29c4a94b456b188716f61020 #v2: 2.4.1 available
+        uses: nick-invision/retry@e88a9994b039653512d697de1bce46b00bfe11b5 #v2: 2.4.1 available
         with:
           timeout_minutes: 10
           max_attempts: 3
@@ -228,7 +228,7 @@ jobs:
       - name: "Execute end-to-end tests"
         env:
           SOLUTIONS_WEBHOOK: ${{ secrets.E2E_SOLUTIONS_WEBHOOK }}
-        uses: nick-invision/retry@45ba062d357edb3b29c4a94b456b188716f61020 #v2: 2.4.1 available
+        uses: nick-invision/retry@e88a9994b039653512d697de1bce46b00bfe11b5 #v2: 2.4.1 available
         with:
           timeout_minutes: 20
           max_attempts: 2
@@ -300,7 +300,7 @@ jobs:
         if: github.repository == 'juice-shop/juice-shop' || github.repository != 'juice-shop/juice-shop' && matrix.os == 'ubuntu-latest' && matrix.node-version == '16'
         run: npm install
       - name: "Execute end-to-end tests with application hosted in subfolder"
-        uses: nick-invision/retry@45ba062d357edb3b29c4a94b456b188716f61020 #v2: 2.4.1 available
+        uses: nick-invision/retry@e88a9994b039653512d697de1bce46b00bfe11b5 #v2: 2.4.1 available
         with:
           timeout_minutes: 20
           max_attempts: 1
